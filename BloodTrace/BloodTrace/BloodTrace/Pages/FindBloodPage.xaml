@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BloodTrace.Pages.FindBloodPage">
+    <ContentPage.Content>
+       <StackLayout VerticalOptions="Center" Margin="40,0,40,0">
+            <Picker Title="Select blood Group" TextColor="#A5A7A8" x:Name="PickerBloodGroup">
+                <Picker.Items>
+                    <x:String>A+</x:String>
+                    <x:String>B+</x:String>
+                    <x:String>O+</x:String>
+                    <x:String>AB+</x:String>
+                </Picker.Items>
+            </Picker>
+
+           <Picker Title="Select Country" TextColor="#A5A7A8" x:Name="PickerCountry">
+               <Picker.Items>
+                    <x:String>USA</x:String>
+                    <x:String>England</x:String>
+                    <x:String>India</x:String>
+                    <x:String>France</x:String>
+                    <x:String>China</x:String>
+                    <x:String>Germany</x:String>
+               </Picker.Items>
+           </Picker>
+            <Button BackgroundColor="#009688" Text="Search" TextColor="White" x:Name="BtnSearch" Clicked="BtnSearch_OnClicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
